@@ -7,6 +7,7 @@ do
 	echo "Text read from file - $name" 
 	eval cp $name .
 	git add *
+	git add .*
 	git commit -m "File backup from $(date +'%Y%m%d%H%M')"
 done<$filename	
 
