@@ -1,19 +1,16 @@
 [user]
-	email = ester.ytterbrink@jayway.com
+	email = ester@ytterbrink.com
 	name = Ester Ytterbrink
-[core]
-	excludesfile = /Users/esterytterbrink/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[rebase]
+	instructionFormat = (%an <%ae>) %s
 [alias]
 	st = status
 	co = checkout
-        ca = commit -a
-        st = status
+  ca = commit -a
+  rb = rebase --i
+  oops = commit -a --amend
+  wip = commit -a -m 'WIP'
+  st = status
 	l = log  --decorate=short --pretty=format:'%C(green)%d%C(red) %aN%Creset%n' --graph --all;
 	ll = log  --decorate=short --pretty=format:'%C(blue)%h%C(green)%d%C(red) %aN%Creset (%cr)%n        %s%n ' --graph --all;
 	k = log --graph --decorate --pretty=oneline --abbrev-commit;
