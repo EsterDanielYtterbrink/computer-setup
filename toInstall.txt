@@ -1,9 +1,0 @@
-Xcode - AppStore
-Spotify - https://www.spotify.com/se/download/mac/
-Webstorm - http://www.jetbrains.com/webstorm/ -> installs the java runtime, settings are found in a jar-file and can be imported.
-Omnifocus - http://www.omnigroup.com/omnifocus/, licensed + setup sync method to get your data
-Skype - http://www.skype.com/en/
-Chrome - https://www.google.com/intl/en/chrome/browser
-TextWrangler - http://www.barebones.com/products/textwrangler/download.html
-Google hangout - https://www.google.com/tools/dlpage/hangoutplugin
-
