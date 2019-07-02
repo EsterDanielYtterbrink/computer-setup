@@ -4,7 +4,13 @@ set number
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-set colorcolumn=100
 
 highlight DoubleWhiteSpace ctermbg=blue guibg=blue
-match DoubleWhiteSpace /\s\s/
+2match DoubleWhiteSpace /\s\s/
+
+highlight EndWhiteSpace ctermbg=yellow guibg=yellow
+3match EndWhiteSpace /\s$/
+
+set colorcolumn=79
+
+set spell

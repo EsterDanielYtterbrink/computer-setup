@@ -1,16 +1,16 @@
 [user]
-	email = ester@ytterbrink.com
-	name = Ester Ytterbrink
+	email = esterdaniel@ytterbrink.com
+	name = Ester Daniel Ytterbrink
 [rebase]
 	instructionFormat = (%an <%ae>) %s
 [alias]
-	st = status
-	co = checkout
   ca = commit -a
-  rb = rebase --i
+  co = checkout
   oops = commit -a --amend
-  wip = commit -a -m 'WIP'
+  rb = rebase --i
   st = status
+  wip = commit -a -m 'WIP'
+  review = diff --name-only master 
 	l = log  --decorate=short --pretty=format:'%C(green)%d%C(red) %aN%Creset%n' --graph --all;
 	ll = log  --decorate=short --pretty=format:'%C(blue)%h%C(green)%d%C(red) %aN%Creset (%cr)%n        %s%n ' --graph --all;
 	k = log --graph --decorate --pretty=oneline --abbrev-commit;
@@ -22,7 +22,12 @@
 [pager]
         color = true
 
+[httpd]
+    sslVersion = tlsv1.2
+
 [status]
         color = auto
 [push]
-	default = tracking
+default = tracking
+[core]
+	editor = vim
